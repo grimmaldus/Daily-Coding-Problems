@@ -1,4 +1,5 @@
-function productOfArray(inputArray: number[]): number{
+// Prolly some testing javascript syntax
+function product(inputArray: number[]): number{
     let result = 1;
 
     inputArray.forEach(element => {
@@ -8,10 +9,10 @@ function productOfArray(inputArray: number[]): number{
     return result;
 }
 
-function solution(inputArray: number[]){
+export function productOfArray(inputArray: number[]){
     let result = new Array();
 
-    let productOfAll = productOfArray(inputArray);
+    let productOfAll = product(inputArray);
 
     inputArray.forEach(element => {
         result.push(productOfAll / element);
@@ -19,5 +20,3 @@ function solution(inputArray: number[]){
 
     console.log(result);
 }
-
-solution([1,2,3,4,5]);

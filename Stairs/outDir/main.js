@@ -6,4 +6,4 @@ function stairs(n) {
 function stairsSolution() {
     console.log(stairs(4));
 }
-//# sourceMappingURL=helloworld.js.map
+//# sourceMappingURL=main.js.map
