@@ -1,8 +1,8 @@
-import { binaryGap } from "./BinaryGap/binaryGap";
-import { oddOccurencesInArray } from "./OddOccurrencesInArray/oddOccurencesInArray";
-import { stairs } from "./Stairs/stairs";
-import { productOfArray } from "./ProductOfArray/productOfArray";
-import { cycleRotation } from "./CycleRotation/cycleRotation";
+import { binaryGap } from "./src/BinaryGap/binaryGap";
+import { oddOccurencesInArray } from "./src/OddOccurrencesInArray/oddOccurencesInArray";
+import { stairs } from "./src/Stairs/stairs";
+import { productOfArray } from "./src/ProductOfArray/productOfArray";
+import { cycleRotation } from "./src/CycleRotation/cycleRotation";
 
 // Tests
 
