@@ -1,12 +1,9 @@
 {
     "compilerOptions": {
+        "outDir": "dist",
         "target": "esnext",
         "module": "commonjs",
-        "outDir": "outDir",
         "sourceMap": true,
-        "rootDir" : "./",
-        
-        /* Strict Type-Checking options */
         "strict": true,
         "strictNullChecks": true
     }
