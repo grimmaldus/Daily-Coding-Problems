@@ -1,31 +1,30 @@
+"use strict";
+exports.__esModule = true;
 // A binary gap within a positive integer N is any maximal sequence of
 // consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
-export function binaryGap(N: number): number {
-    const binary = N.toString(2); console.log(binary);
-    let maxGap = 0;
-    let currentGap = 0;
-    let foundOne = false;
-
-    for (let i = 0; i < binary.length; i++) {
-        if (binary[i] === "1") { 
+function binaryGap(N) {
+    var binary = N.toString(2);
+    var maxGap = 0;
+    var currentGap = 0;
+    var foundOne = false;
+    for (var i = 0; i < binary.length; i++) {
+        if (binary[i] === "1") {
             foundOne = true;
         }
-        if (foundOne  && binary[i] === "1") {
+        if (foundOne && binary[i] === "1") {
             foundOne = false;
             if (maxGap < currentGap) {
                 maxGap = currentGap;
             }
             currentGap = 0;
         }
-
         if (foundOne) {
             currentGap++;
         }
     }
-
     if (foundOne && maxGap > 0) {
         return maxGap;
     }
-
     return maxGap;
 }
+exports.binaryGap = binaryGap;

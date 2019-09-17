@@ -1,7 +1,7 @@
 ﻿param(
     [string]$path=".",
     [string]$output="dist",
-    [string]$tsconfigSource="build.json"
+    [string]$tsconfigSource="tsconfig.json"
 )
 
 function getTSCompilerOptions($inputFile){

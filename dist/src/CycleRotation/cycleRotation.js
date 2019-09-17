@@ -14,5 +14,5 @@ function cycleRotation(A, K) {
     return result;
 }
 exports.cycleRotation = cycleRotation;
-console.log(cycleRotation([1, 2, 3, 4, 5, 6, 7], 3));
+console.log(cycleRotation([4, 1, 2, 3], 4));
 //# sourceMappingURL=cycleRotation.js.map

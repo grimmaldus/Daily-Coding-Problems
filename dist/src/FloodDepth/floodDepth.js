@@ -12,8 +12,7 @@ function floodDepth(A) {
             continue;
         }
         // Calculate depth
-        // Check if it's not the edge
-        newDepth = indeofA[indexOfLeftBarrier] - A[index];
+        newDepth = A[indexOfLeftBarrier] - A[index];
         maxDepth = newDepth > maxDepth ? newDepth : maxDepth;
     }
     return maxDepth;
