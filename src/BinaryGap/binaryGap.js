@@ -8,15 +8,16 @@ function binaryGap(N) {
     var currentGap = 0;
     var foundOne = false;
     for (var i = 0; i < binary.length; i++) {
-        if (binary[i] === "1") {
-            foundOne = true;
-        }
         if (foundOne && binary[i] === "1") {
             foundOne = false;
             if (maxGap < currentGap) {
                 maxGap = currentGap;
             }
             currentGap = 0;
+        }
+        if (binary[i] === "1") {
+            foundOne = true;
+            continue;
         }
         if (foundOne) {
             currentGap++;
