@@ -8,6 +8,8 @@ export function cycleRotation(A: number[], K: number): number[] {
     let result: number[] = [];
     let newIndex = 0;
 
+    K %= A.length;
+
     for (let index = 0; index < A.length; index++) {
         newIndex = (A.length + index - K) % A.length;
         result[index] = A[newIndex];
